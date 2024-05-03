@@ -3,15 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <title>Prakhar </title>
-    <link rel="stylesheet" href="event.css">
+    
 
-    <style>
-      .logo {
-        height: 120px;
-        width: 150px;
-      }
-     
-    </style>
+<link rel="stylesheet" href="main.css">
   </head>
   <body>
     <header class="navbar">
@@ -22,20 +16,18 @@
       </div>
       <nav>
         <ul class="ul">
-          <li><a href="#home">Home</a></li>
+          <li><a href="main.html">Home</a></li>
           <li><a href="events.html">Events</a></li>
           <li><a href="loginbutton.html">Login</a></li>
           <li><a href="register.html">Register</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      <div class="side-buttons">
-        <!-- Side buttons for navigation -->
-        <button onclick="toggleNav()">☰</button>
-      </div>
+      <button class="side-buttons" onclick="toggleNav()">☰</button>
+
     </header>
 
-    <script src="script.js"></script>
+   
     
     
     
@@ -57,7 +49,7 @@
 
         <div class="boxy">
           <img class="img1" src="44.jpg" alt="icon" />
-          <h2>Event 1</h2>
+          <h2>MANTHAN THE TECH FEST</h2>
           
           <a href="#apply">Click here to know more</a>
         </div>
@@ -65,7 +57,7 @@
 
         <div class="boxy">
           <img class="img1" src="33.jpg" alt="icon" />
-          <h2>Event 2</h2>
+          <h2>ANNUAL FEST 2024</h2>
           
           <a href="#apply">Click here to know more</a>
         </div>
@@ -73,7 +65,7 @@
 
         <div class="boxy">
           <img class="img1" src="11.jpg" alt="icon" />
-          <h2>Event 3</h2>
+          <h2>HACKTOBER DANCE FESTIVAL</h2>
           
           <a href="#apply">Click here to know more</a>
         </div>
@@ -82,7 +74,7 @@
         
         <div class="boxy">
           <img class="img1" src="22.jpg" alt="icon" />
-          <h2>Event 4</h2>
+          <h2>SPORTS MEET</h2>
           
           <a href="#apply">Click here to know more</a>
         </div>
@@ -135,10 +127,7 @@
 
 
         <div class="imagecontainer">
-          <!-- <div class="left-text">
-              <h2 class="heading">My Gallery</h2>
-              <p class="subheading">When words become unclear, I shall focus with photographs. When images become inadequate, I shall be content with silence.</p>
-          </div> -->
+        
           <h1>EVENTS GALLERY</h1>
           <div class="gallery">
             
@@ -183,12 +172,13 @@
     </div>
   </footer>
 
-<!-- <footer class="footer2">
+<script>
+  function toggleNav() {
+    var navList = document.querySelector('nav ul');
+    navList.classList.toggle('active');
+}
 
-
-  
-  
-</footer> -->
+</script>
     
   </body>
 </html>

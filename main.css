@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,900&display=swap');
 body {
   background-color: rgb(255, 255, 255); /* Professional background color */
   font-family: Arial, sans-serif;
@@ -54,22 +55,11 @@ nav ul li a:hover::before {
 
 
 
-
-
-/* Styles for side buttons */
 .side-buttons {
   display: none; /* Initially hide side buttons */
 }
 
-@media screen and (max-width: 500px) {
-  header nav ul {
-    display: none; /* Hide navbar items when width is less than 500px */
-  }
-  
-  .side-buttons {
-    display: block; /* Show side buttons when width is less than 500px */
-  }
-}
+
 
 .social-icons {
   text-align: center;
@@ -210,27 +200,13 @@ footer {
   margin: 0px;
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .container {
-      grid-template-columns: 1fr; /* Single column */
+      grid-template-columns: 1fr;
   }
-}
-
-
-
-
-
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,900&display=swap');
-
-
-
-/* body {
-    font-family: 'Bodoni Moda', serif;
-    font-size: 1.2rem;
 } */
+
+
 
 .imagecontainer {
  
@@ -275,6 +251,7 @@ footer {
 }
 
 .box:hover {
+  color: transparent;
     background-color: #999;
     background-position:center;
     box-shadow: 0 0 4px #fff;
@@ -286,6 +263,38 @@ footer {
 
 .col-2 {
     grid-column: span 2;
+}
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+  nav ul {
+      display: none; /* Hide the list items by default */
+      flex-direction: column; /* Stack the items vertically */
+      position: absolute;
+      top: 80px; /* Adjust as needed */
+      left: 0;
+      width: 100%;
+      background-color: #080808; /* Background color for the dropdown */
+      padding: 10px 0; /* Add some padding */
+      z-index: 1; /* Ensure it's above other content */
+  }
+
+  nav ul.active {
+      display: flex; /* Show the list items when active */
+  }
+
+  nav ul li {
+      margin: 10px 0; /* Add some spacing between items */
+      text-align: center; /* Center-align the items */
+  }
+
+  .side-buttons {
+      display: block; /* Show the side button */
+  }
 }
 
 /* media query for width <= 1024px */
