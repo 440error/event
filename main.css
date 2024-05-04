@@ -44,7 +44,7 @@ nav ul li a::before {
   position: absolute;
   width: 0;
   height: 3px;
-  background-color: #0cbce4;
+  background-color: #ffffff;
   bottom: 0;
   transition: width 0.6s; /* Apply the transition to the width property */
 }
@@ -58,6 +58,32 @@ nav ul li a:hover::before {
 .side-buttons {
   display: none; /* Initially hide side buttons */
 }
+
+nav ul.active {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 200px; /* Adjust as needed */
+  height: 100%; /* Adjust as needed */
+  background-color: #080808;
+  padding: 20px;
+  z-index: 1;
+}
+
+nav ul.active li {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(244, 242, 242, 0.858);
+}
+
+nav ul.active li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 
 
 
@@ -152,7 +178,8 @@ section {
   height: 500px;
 }
 .mainevents {
-  background-color: #fff; /* Skill card background color */
+  background-color: #8d8b8b;
+  background-image: linear-gradient(160deg, #f0eaea 0%, #b1c8c0 100%);
   padding: 20px;
   margin: 10px;
   border-radius: 5px;
@@ -269,51 +296,6 @@ footer {
 
 
 
-
-@media screen and (max-width: 480px) {
-  nav ul {
-      display: none; /* Hide the list items by default */
-      flex-direction: column; /* Stack the items vertically */
-      position: absolute;
-      top: 80px; /* Adjust as needed */
-      left: 0;
-      width: 100%;
-      background-color: #080808; /* Background color for the dropdown */
-      padding: 10px 0; /* Add some padding */
-      z-index: 1; /* Ensure it's above other content */
-  }
-
-  nav ul.active {
-      display: flex; /* Show the list items when active */
-  }
-
-  nav ul li {
-      margin: 10px 0; /* Add some spacing between items */
-      text-align: center; /* Center-align the items */
-  }
-
-  .side-buttons {
-      display: block; /* Show the side button */
-  }
-}
-
-/* media query for width <= 1024px */
-
-@media screen and (max-width: 1024px) {
-    .imagecontainer {
-        flex-direction: column;
-        padding-block: 20px;
-    }
-    .gallery {
-        width: 100%;
-        padding-inline: 12px;
-        grid-auto-rows: 290px;
-    }
-    .box {
-        grid-row: span 1;
-        grid-column: span 3;
-    }
-}
 
 
 

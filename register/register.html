@@ -49,11 +49,11 @@
     <label for="phoneNumber">Phone Number:</label>
     <input type="tel" id="phoneNumber" name="phoneNumber" required>
 
-    <label for="eventSelection">Select Event:</label>
+    <label for="eventSelection">Select Course:</label>
     <select id="eventSelection" name="eventSelection" required>
-        <option value="">Select an event...</option>
-        <option value="Event 1">Event 1</option>
-        <option value="Event 2">Event 2</option>
+        <option value="">Your course</option>
+        <option value="Event 1">BSc CS hons</option>
+        <option value="Event 2">BSc Maths hons</option>
         <!-- Add more options as needed -->
     </select>
 
@@ -70,7 +70,7 @@
         const phoneNumber = document.getElementById("phoneNumber").value;
         const eventSelection = document.getElementById("eventSelection").value;
 
-        // You can perform further validations here if needed
+       
 
         // Example: Display registration details in console
         console.log("Full Name:", fullName);
@@ -78,9 +78,13 @@
         console.log("Phone Number:", phoneNumber);
         console.log("Selected Event:", eventSelection);
 
-        // Here you can send the registration details to a backend server for processing, store in a database, etc.
+
+        window.location.href = "main.html";
+        alert("registration succesfull!")
+
+        // Here we can send the registration details to a backend server for processing, store in a database, etc.
         // You may need to use AJAX or fetch API for this purpose
-        // For simplicity, this example only logs the data to console
+        
     }
 </script>
 

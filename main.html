@@ -6,24 +6,37 @@
     
 
 <link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="media.css">
+<style>
+.logo {
+  height: 120px;
+  width: 150px;
+}
+</style>
+
   </head>
+
+
   <body>
     <header class="navbar">
       <div>
         <a href="">
-        <img src="" alt="Your Logo" class="logo" />
+        <img src="newlogo.png" alt="Your Logo" class="logo" />
       </a>
       </div>
       <nav>
         <ul class="ul">
           <li><a href="main.html">Home</a></li>
-          <li><a href="events.html">Events</a></li>
+          <li><a href="previousevents/events.html">Events</a></li>
           <li><a href="loginbutton.html">Login</a></li>
           <li><a href="register.html">Register</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      <button class="side-buttons" onclick="toggleNav()">☰</button>
+      <!-- <button class="side-buttons" onclick="toggleNav()">☰</button> -->
+
+      <button class="side-buttons" id="navButton" >☰</button>
+      
 
     </header>
 
@@ -49,8 +62,7 @@
 
         <div class="boxy">
           <img class="img1" src="44.jpg" alt="icon" />
-          <h2>MANTHAN THE TECH FEST</h2>
-          
+          <h2>MANTHAN TECH FEST</h2>
           <a href="#apply">Click here to know more</a>
         </div>
 
@@ -58,15 +70,13 @@
         <div class="boxy">
           <img class="img1" src="33.jpg" alt="icon" />
           <h2>ANNUAL FEST 2024</h2>
-          
           <a href="#apply">Click here to know more</a>
         </div>
 
 
         <div class="boxy">
           <img class="img1" src="11.jpg" alt="icon" />
-          <h2>HACKTOBER DANCE FESTIVAL</h2>
-          
+          <h2>DANCE FESTIVAL</h2>
           <a href="#apply">Click here to know more</a>
         </div>
 
@@ -75,24 +85,17 @@
         <div class="boxy">
           <img class="img1" src="22.jpg" alt="icon" />
           <h2>SPORTS MEET</h2>
-          
           <a href="#apply">Click here to know more</a>
         </div>
-      </div>
-    </body>
 
-
-
-
-
-
-  
-        
-      </section>
+        </div>
+      
+    </section>
+    
 
         <section id="main">
           <h1>Big events this year</h1>
-          <div class="event-conatiner">
+          <!-- <div class="event-conatiner"> -->
             <div class="mainevents">
               <h3>ANNUAL FEST </h3>
               <p>
@@ -114,7 +117,7 @@
               </p>
             </div>
           
-          </div>
+          <!-- </div> -->
         </section>
         
         
@@ -145,8 +148,8 @@
 
 
 
-<footer>
-    <div class="social-icons" >
+       <footer>
+      <div class="social-icons" >
       <a href="https://www.instagram.com/prakhar.khugshal/" target="_blank">
         <img src="insta.png" alt="Instagram" width="60%"  />
       </a>
@@ -168,17 +171,31 @@
       </a>
 
 
-      <p>Copyright &copy; 2023 Prakhar Khugshal</p>
+      <p>Copyright &copy; 2024 Prakhar Khugshal</p>
     </div>
   </footer>
 
-<script>
-  function toggleNav() {
-    var navList = document.querySelector('nav ul');
-    navList.classList.toggle('active');
-}
 
-</script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const navButton = document.getElementById('navButton');
+    const navList = document.querySelector('nav ul');
+    
+    navButton.addEventListener('click', function() {
+      navList.classList.toggle('active');
+    });
+  
+    document.addEventListener('click', function(event) {
+      if (!event.target.closest('nav ul') && !event.target.closest('.side-buttons')) {
+        navList.classList.remove('active');
+      }
+    });
+  });
+  </script>
+
+
     
   </body>
 </html>
