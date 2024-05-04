@@ -63,5 +63,130 @@
       grid-row: span 1;
       grid-column: span 3;
     }
+
+
+    .boxy{
+      height:600px ;
+      width: 500px;
+    }
   }
   
+/* Media queries for mobile phones */
+@media screen and (max-width: 480px) {
+  /* Header */
+  .logo {
+    width: 100px; /* Adjust logo size */
+    height: auto;
+  }
+  
+  header {
+    padding: 10px; /* Adjust header padding */
+  }
+
+  nav ul {
+    display: none; /* Hide the navigation menu by default */
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh; /* Make the navigation menu take full height */
+    width: 70%; /* Adjust the width as needed */
+    background-color: #080808; /* Background color for the dropdown */
+    padding-top: 80px; /* Add padding to top for menu items */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align items to the top */
+    align-items: center; /* Center items horizontally */
+    z-index: 1; /* Ensure it's above other content */
+    overflow-y: auto; /* Enable scrolling if content overflows */
+  }
+
+  nav ul.active {
+    display: flex; /* Show the navigation menu when active */
+  }
+
+  nav ul li {
+    margin: 10px 0; /* Add spacing between menu items */
+  }
+
+  .side-buttons {
+    display: block; /* Show the side button */
+    margin-right: 10px; /* Adjust margin */
+  }
+
+  /* About section */
+  #about {
+    padding: 20px; /* Adjust padding */
+  }
+
+  /* Cards section */
+  #cards h1 {
+    font-size: 24px; /* Adjust heading font size */
+    margin-top: 20px; /* Adjust margin */
+    margin-bottom: 40px; /* Adjust margin */
+  }
+
+  .container {
+    grid-template-columns: repeat(1, 1fr); /* Change to single column layout */
+    width: 90%; /* Adjust width */
+    gap: 20px; /* Adjust gap */
+  }
+
+  .boxy {
+    height: auto; /* Adjust height */
+    width: 90%; /* Adjust width */
+  }
+
+  .boxy .img1 {
+    height: 200px; /* Adjust image height */
+  }
+
+  .boxy h2 {
+    font-size: 18px; /* Adjust heading font size */
+  }
+
+  .boxy p {
+    font-size: 14px; /* Adjust paragraph font size */
+  }
+
+  .boxy a {
+    font-size: 14px; /* Adjust button font size */
+    padding: 8px 16px; /* Adjust button padding */
+  }
+
+  /* Main section */
+  #main {
+    height: auto; /* Adjust height */
+    padding: 20px; /* Adjust padding */
+  }
+
+  .mainevents {
+    margin: 10px 0; /* Adjust margin */
+    padding: 10px; /* Adjust padding */
+  }
+
+  /* Image container section */
+  .imagecontainer {
+    padding: 20px; /* Adjust padding */
+  }
+
+  .imagecontainer h1 {
+    font-size: 24px; /* Adjust heading font size */
+    margin-bottom: 20px; /* Adjust margin */
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); /* Adjust grid columns */
+  }
+
+  .box {
+    height: 150px; /* Adjust box height */
+    font-size: 14px; /* Adjust font size */
+  }
+}
+
+/* Additional media query for smaller phones */
+@media screen and (max-width: 320px) {
+  /* Adjustments specific to smaller phones */
+  nav ul {
+    width: 80%; /* Adjust width */
+  }
+}
