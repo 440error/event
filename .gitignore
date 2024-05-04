@@ -1,7 +1,6 @@
 # Ignore CSS files
 
-*.js
-*.php
+
 
 # Ignore PNG, JPG, WEBP, MP4 and JPEG image files
 *.png
