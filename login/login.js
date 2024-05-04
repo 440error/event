@@ -9,7 +9,7 @@ function validateLogin() {
         // If username and password are correct, show success message and redirect to main webpage
         alert("Login successful! Welcome, " + username + "!");
         // Redirect to the main webpage
-        window.location.href = "main.html"; // Replace "main.html" with the actual URL of your main webpage
+        window.location.href = "index.html"; // Replace "main.html" with the actual URL of your main webpage
     } else {
         // If username or password is incorrect, show error message
         alert("Invalid username or password. Please try again.");

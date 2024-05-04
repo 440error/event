@@ -16,7 +16,7 @@ function submitForm(event) {
     console.log("Selected Event:", eventSelection);
 
 
-    window.location.href = "main.html";
+    window.location.href = "index.html";
     alert("registration succesfull!")
 
     // Here we can send the registration details to a backend server for processing, store in a database, etc.
