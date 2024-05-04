@@ -74,9 +74,10 @@ nav ul.active {
 }
 
 nav ul.active li {
-  margin-bottom: 10px;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(244, 242, 242, 0.858);
+  box-shadow: 0 0 1px rgba(244, 242, 242, 0.858);
 }
 
 nav ul.active li a {
