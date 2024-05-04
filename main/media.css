@@ -3,6 +3,32 @@
   
   @media screen and (max-width: 624px) {
 
+    h1 {
+      font-size: 24px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    h3 {
+      font-size: 18px;
+    }
+  
+    p {
+      font-size: 16px; /* Adjust paragraph font size */
+    }
+  
+  
+    .social-icons a{
+      margin: 15px;
+      
+    }
+  
+    .social-icons a img {
+      width: 40px; /* Increase the width of social icons */
+      height: 40px; /* Increase the height of social icons */
+    }
    
     nav ul {
        
@@ -58,43 +84,18 @@
     .box {
       grid-row: span 1;
       grid-column: span 3;
+      font-size: 2rem;
     }
+   +
   }
   
 
   /* Media queries for mobile phones */
 @media screen and (max-width: 600px) {
   /* Adjust heading font size */
-  h1 {
-    font-size: 24px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
-  h3 {
-    font-size: 18px;
-  }
-
-  p {
-    font-size: 16px; /* Adjust paragraph font size */
-  }
 
 
-  .social-icons a{
-    margin: 15px;
-    
-  }
-
-  .social-icons a img {
-    width: 40px; /* Increase the width of social icons */
-    height: 40px; /* Increase the height of social icons */
-  }
-
-  .box {
-    font-size: 2rem; /* Adjust font size for smaller screens if needed */
-  }
+  
 
 }
 
