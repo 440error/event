@@ -71,22 +71,41 @@ nav ul.active {
   background-color: #080808;
   padding: 20px;
   z-index: 1;
+  border: white 2px;
+  border-radius: 10px;
 }
 
 nav ul.active li {
   margin-bottom: 3rem;
   margin-top: 2rem;
+  border: whitesmoke 1px;
   border-radius: 5px;
-  box-shadow: 0 0 1px rgba(244, 242, 242, 0.858);
+  
 }
 
 nav ul.active li a {
-  color: #ffffff;
+  color: #d7cbcb;
   text-decoration: none;
   font-weight: bold;
 }
 
 
+
+
+
+
+footer {
+  background-color: #080808;
+  background-image: linear-gradient(160deg, #080808 0%, #000101 100%);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+ 
+}
 
 
 .social-icons {
@@ -208,32 +227,11 @@ hr {
   margin-bottom: 20px; /* Add spacing below the centered heading */
 }
 
-footer {
-  background-color: #080808;
-  background-image: linear-gradient(160deg, #080808 0%, #000101 100%);
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  position: relative;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  /* margin-bottom: 50px; */
 
-  /* height: 50px;  */
-  /* You can adjust the height as needed */
-}
 
-.footer2 {
-  bottom: 0px;
-  margin: 0px;
-}
 
-/* @media screen and (max-width: 600px) {
-  .container {
-      grid-template-columns: 1fr;
-  }
-} */
+
+
 
 
 

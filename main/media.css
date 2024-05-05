@@ -21,7 +21,7 @@
   
   
     .social-icons a{
-      margin: 15px;
+      margin: 11px;
       
     }
   
@@ -39,11 +39,19 @@
         right: 0;
         width: 100%;
         background-color: #1b2223;
-        background-image: linear-gradient(160deg, #060c0e 0%, #242728 100%);
         padding: 10px 0 ; /* Add some padding */
         z-index: 1; 
         text-decoration: underline;
         
+      }
+
+      nav ul li {
+        margin: 10px 0; /* Add some spacing between items */
+        text-align: center; /* Center-align the items */
+      }
+
+      nav ul.active {
+        display: flex; /* Show the list items when active */
       }
     
 
@@ -51,14 +59,11 @@
         margin-bottom: 3rem; /* Adjust the margin as needed */
       }
 
-      nav ul.active {
-        display: flex; /* Show the list items when active */
-      }
+     
+
+      
     
-      nav ul li {
-        margin: 10px 0; /* Add some spacing between items */
-        text-align: center; /* Center-align the items */
-      }
+      
     
       .side-buttons {
         display: block; /* Show the side button */

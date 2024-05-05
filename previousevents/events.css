@@ -1,0 +1,136 @@
+/* CSS styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.logo {
+  height: 120px;
+  width: 150px;
+}
+
+header {
+  background-color: #080808;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.side-buttons {
+  display: none; /* Initially hide the button */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  position: relative;
+}
+nav ul li a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: #0cbce4;
+  bottom: 0;
+  transition: width 0.6s;
+}
+nav ul li a:hover::before {
+  width: 100%;
+}
+
+#previous-events {
+  background: linear-gradient(
+    135deg,
+    #2d1c30,
+    #7c2c6f
+  ); /* Add the gradient background */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  width: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.event-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Added box shadow for depth */
+  padding: 0;
+  width: 250px; /* Adjusted width for better spacing */
+  transition: transform 0.3s ease-in-out; /* Added transition for hover effect */
+}
+
+.textcard{
+    padding: 20px;
+}
+
+.event-card:hover {
+  transform: translateY(-5px); /* Added slight upward translation on hover */
+}
+
+.event-image {
+  max-height: 167px;
+  width: 100%; /* Ensure the image fills the container */
+  border-radius: 8px 8px 0 0; /* Rounded corners only on top */
+  object-fit: cover; /* Ensure the image covers the entire container */
+  margin-bottom: 10px; /* Add some spacing below the image */
+  box-shadow: 0 4px 8px rgba(1, 0.8, 0.3, 0.5);
+}
+.event-card h2 {
+  color: #1693b2;
+  margin-bottom: 10px;
+  font-size: 1.2em; /* Increased font size for event titles */
+  box-shadow: 0 2px 4px rgba(46, 41, 41, 0.1);
+  text-align: center;
+}
+
+.event-card p {
+  margin: 10px 0;
+  color: #555; /* Adjusted text color for better readability */
+}
+
+#see-more-btn {
+  background-color: #1693b2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 8rem;
+  /* position: relative; */
+}
+#see-more-btn:hover {
+  background-color: #0cbce4;
+}
+footer {
+  background-color: #080808;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

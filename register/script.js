@@ -30,8 +30,8 @@ submit.addEventListener("click", function (event) {
   const fullName = document.getElementById("fullName").value;
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
-  const phoneNumber = document.getElementById("phoneNumber").value;
-  const eventSelection = document.getElementById("eventSelection").value;
+  // const phoneNumber = document.getElementById("phoneNumber").value;
+  // const eventSelection = document.getElementById("eventSelection").value;
 
   createUserWithEmailAndPassword(
     auth,
