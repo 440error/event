@@ -14,3 +14,15 @@
     });
   });
   
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const logoLink = document.getElementById('logo-link');
+    const userProfile = document.getElementById('user-profile');
+  
+    logoLink.addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent the default link behavior
+      userProfile.classList.toggle('hidden'); // Toggle the visibility of the user profile
+    });
+  });
+  

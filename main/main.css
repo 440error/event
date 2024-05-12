@@ -299,3 +299,7 @@ hr {
 
 
 
+/* Add this CSS to hide the user profile by default */
+.hidden {
+  display: none;
+}
